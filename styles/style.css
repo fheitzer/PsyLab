@@ -1,9 +1,35 @@
 p {
-  color: green;
+  color: white;
+  font-size: 25px;
+  text-align: center;
 }
 li {
-  color: blue;
+  text-align: center;
+  color: white;
+  font-size: 22px:
 }
 h1 {
-  color: red;
+  color: green;
+  font-size: 100px;
+  text-align: center;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+html {
+  font-size: 24px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family: 'Cute Font', cursive; /* this should be the rest of the output you got from Google fonts */
+
+}
+body{height:100%;
+   width:100%;
+   background-image:url(../images/wald.jpg);/*your background image*/
+   background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
+   background-size:cover;/*this sets the image to fullscreen covering the whole screen*/
+   /*css hack for ie*/
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.image.jpg',sizingMethod='scale');
+   -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.jpg',sizingMethod='scale')";
+}
+img {
+  display: block;
+  margin: 0 auto;
 }

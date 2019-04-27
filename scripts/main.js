@@ -12,15 +12,10 @@ myImage.onclick = function() {
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
-
-        
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
   myHeading.textContent = 'Welcome to the Casino, ' + myName;
-}
-
-
 }
 
 if(!localStorage.getItem('name')) {
@@ -28,10 +23,7 @@ if(!localStorage.getItem('name')) {
 } else {
   var storedName = localStorage.getItem('name');
   myHeading.textContent = 'Welcome to the Casino, ' + storedName;
-
 }
-
-function msg () {
-        window.open("http://www.miniclipgamez.com/playgame/2444/play-roulette.html");myButton.onclick = function() {
+myButton.onclick = function() {
   setUserName();
 }
